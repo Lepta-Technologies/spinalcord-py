@@ -12,5 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .fields import *
-from .models import *
+from spinalcord import fields
+from spinalcord import models
+
+
+class FieldsModel(models.Model):
+    double_field = fields.DoubleField("doubleField")
+    int32_field = fields.Int32Field("int32Field")
+    uint16_field = fields.UInt16Field("uInt16Field")
+
+    def get_fields(self):
+        return [self.double_field, self.int32_field, self.uint16_field]
