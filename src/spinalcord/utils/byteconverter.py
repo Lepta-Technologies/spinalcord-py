@@ -30,6 +30,10 @@ class ByteConverter:
         return struct.pack("<i", value)
 
     @staticmethod
+    def from_uint8(value):
+        return struct.pack("<B", value)
+
+    @staticmethod
     def from_uint16(value):
         return struct.pack("<H", value)
 
@@ -44,6 +48,10 @@ class ByteConverter:
     @staticmethod
     def to_int32(bytes_):
         return struct.unpack("<i", bytes_)[0]
+
+    @staticmethod
+    def to_uint8(bytes_):
+        return struct.unpack("<B", bytes_)[0]
 
     @staticmethod
     def to_uint16(bytes_):

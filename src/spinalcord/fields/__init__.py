@@ -14,4 +14,5 @@
 
 from .double import DoubleField
 from .int32 import Int32Field
+from .uint8 import UInt8Field
 from .uint16 import UInt16Field
