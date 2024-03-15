@@ -14,4 +14,6 @@
 
 from .double import DoubleFieldTest
 from .int32 import Int32FieldTest
+from .uint8 import UInt8FieldTest
 from .uint16 import UInt16FieldTest
+from .uint32 import UInt32FieldTest
